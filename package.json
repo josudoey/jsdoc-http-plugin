@@ -30,7 +30,7 @@
   "author": [
     "Brad van der Laan",
     "Joey Fang"
-  ]
+  ],
   "license": "MIT",
   "dependencies": {
     "jsdoc": "^3.4.3"
