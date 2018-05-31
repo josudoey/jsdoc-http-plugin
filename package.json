@@ -27,9 +27,9 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
-  "author": [
-    "Brad van der Laan",
-    "Joey Fang"
+  "author": "Joey Fang",
+  "contributors":[
+    "Brad van der Laan"
   ],
   "license": "MIT",
   "dependencies": {
