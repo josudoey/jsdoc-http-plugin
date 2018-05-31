@@ -6,7 +6,7 @@
 'use strict'
 
 const authenticationTag = require('./lib/authentication')
-const routeTag = require('./lib/route')
+const apiTag = require('./lib/api')
 const bodyParameterTag = require('./lib/bodyparam')
 const headerParameterTag = require('./lib/headerparam')
 const queryParameterTag = require('./lib/queryparam')
@@ -18,7 +18,7 @@ const serviceTag = require('./lib/serviceparam')
 exports.defineTags = function (dictionary) {
   dictionary.defineTag(serviceTag.name, serviceTag.options)
   dictionary.defineTag(authenticationTag.name, authenticationTag.options)
-  dictionary.defineTag(routeTag.name, routeTag.options)
+  dictionary.defineTag(apiTag.name, apiTag.options)
   dictionary.defineTag(bodyParameterTag.name, bodyParameterTag.options)
   dictionary.defineTag(headerParameterTag.name, headerParameterTag.options)
   dictionary.defineTag(queryParameterTag.name, queryParameterTag.options)
@@ -35,7 +35,7 @@ exports.handlers = {
     headerParameterTag.newDocletHandler(e)
     queryParameterTag.newDocletHandler(e)
     routeParameterTag.newDocletHandler(e)
-    routeTag.newDocletHandler(e)
+    apiTag.newDocletHandler(e)
     responseParameterTag.newDocletHandler(e)
     responseCodeTag.newDocletHandler(e)
   }
